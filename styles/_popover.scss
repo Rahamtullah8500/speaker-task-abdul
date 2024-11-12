@@ -1,0 +1,139 @@
+.popup {
+  position: relative;
+  // top: 20%;
+  // left: 50%;
+  // transform: translate(-50%, -20%);
+  // width: 100%;
+  // max-width: 1200px;
+  margin-bottom:  1rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+
+  &__content {
+    display: flex;
+    // padding: 1.5rem;
+  }
+
+  &__close {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  &__details {
+    width: 100%;
+    align-content: center;
+  }
+
+  &__left {
+    flex: 0 0 35%;
+    // text-align: center;
+    gap: 1rem;
+    display: flex;
+    padding-right: 1rem;
+  }
+
+  &__right {
+    flex: 0 0 65%;
+    padding-left: 1rem;
+    border-left: 1px solid #ddd;
+    align-content: center;
+  }
+
+  &__image {
+    width: 140px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  &__role {
+    font-size: 0.9rem;
+    color: #000;
+    font-weight: 500;
+    margin-top: 0.5rem;
+  }
+
+  &__organization {
+    font-size: 0.9rem;
+    color: gray;
+  }
+
+  &__social {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    color: #000;
+  }
+
+  &__description {
+    font-size: 1rem;
+    color: #222;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 768px) {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__left,
+    &__right {
+      flex: 1 1 100%;
+      padding: 0;
+      border-left: none;
+    }
+
+    &__image {
+      width: 100px;
+    }
+
+    &__title {
+      font-size: 1.1rem;
+    }
+
+    &__role,
+    &__organization {
+      font-size: 0.85rem;
+    }
+
+    &__description {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 1rem;
+
+    &__close {
+      font-size: 1.2rem;
+    }
+
+    &__image {
+      width: 80px;
+    }
+
+    &__title {
+      font-size: 1rem;
+    }
+
+    &__role,
+    &__organization {
+      font-size: 0.8rem;
+    }
+
+    &__description {
+      font-size: 0.85rem;
+    }
+  }
+}

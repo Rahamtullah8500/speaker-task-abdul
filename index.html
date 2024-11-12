@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speaker Component</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <main class="">
+      <header class="header container">
+        <h1 class="header__title">View our Featured Speakers for the Event</h1>
+        <p class="header__subtitle">
+          Speakers are core contributors and industry thought leaders working at
+          <span class="highlight">companies</span> that push for innovation.
+        </p>
+      </header>
+
+      <div class=" container">
+        <div class="popup" id="speakerPopup">
+          <div class="popup__content">
+            <span class="popup__close" id="popupClose">&times;</span>
+            <div class="popup__left">
+              <img
+                class="popup__image"
+                id="popupImage"
+                src=""
+                alt="Speaker Profile"
+              />
+              <div class="popup__details">
+                <h3 class="popup__title" id="popupTitle">Speaker Name</h3>
+                <p class="popup__role" id="popupRole">Role</p>
+                <p class="popup__organization" id="popupOrganization">
+                  Organization
+                </p>
+                <div class="popup__social">
+                  <img src="assets/svgs/group.svg" alt="group" />
+                  <img src="assets/svgs/twitter.svg" alt="twitter" />
+                  <img src="assets/svgs/likedin.svg" alt="likedin" />
+                </div>
+              </div>
+            </div>
+            <div class="popup__right">
+              <p class="popup__description" id="popupDescription">              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="slider" id="slider">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </section>
+
+      <div class="button-container">
+        <p class="button-side-text">Click here to see the full program</p>
+        <img class="button-arrow-icon" alt="arrow" src="/assets/svgs/arrow2.png"/>
+        <button class="primary-button">See the Program</button>
+      </div>
+    </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>

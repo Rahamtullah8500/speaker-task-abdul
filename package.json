@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "sass": "^1.80.6"
+  },
+  "scripts": {
+    "sass": "sass --watch styles/styles.scss styles/styles.css"
+  },
+  "dependencies": {
+    "swiper": "^11.1.14"
+  }
+}
